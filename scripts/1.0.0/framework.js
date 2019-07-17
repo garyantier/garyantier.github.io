@@ -450,17 +450,19 @@ var framework = new class {
         };
 
         bind(data){
-            let inputs = form.querySelectorAll("input, textarea"),
+            let form = this.form,
+                map = this.map,
+                inputs = form.querySelectorAll("input, textarea"),
                 selects = form.querySelectorAll("select");
 
-            for(let key in this.map){
+            for(let key in map){
                 if(data.hasOwnProperty(key)){
                     inputs.forEach((ipt)=>{
-                        if(ipt.name == this.map[key]) ipt.value = data[key];
+                        if(ipt.name == map[key]) ipt.value = data[key];
                     });
 
                     selects.forEach((slcts)=>{
-                        if(slcts.name == this.map[key]){
+                        if(slcts.name == map[key]){
                             slcts.querySelectorAll("option")
                                 .forEach((opt)=>{
                                     if(opt.value == data[key]) opt.selected = true;
