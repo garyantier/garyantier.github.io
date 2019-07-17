@@ -408,6 +408,7 @@ var framework = new class {
     
             this.table = table;
             this.emptyMessage = "No rows to show.";
+            this.ignoredColumns = [];
         }
     
         ignoreColumns(...columns){
