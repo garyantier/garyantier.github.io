@@ -344,7 +344,7 @@ var framework = new class {
                             column.setAttribute("colspan", colspan);
                             column.setAttribute("rowspan", rowspan);
     
-                            if(content.nodeType == 1){
+                            if(content != null && content.nodeType == 1){
                                 column.appendChild(content);
                             }else{
                                 column.innerHTML = content;
@@ -393,7 +393,7 @@ var framework = new class {
                             column.setAttribute("colspan", colspan);
                             column.setAttribute("rowspan", rowspan);
     
-                            if(content.nodeType == 1){
+                            if(content != null && content.nodeType == 1){
                                 column.appendChild(content);
                             }else{
                                 column.innerHTML = content;
