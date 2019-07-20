@@ -604,7 +604,7 @@ x(document).on("keyup", function (e) {
 
 var frameworkCSS = document.createElement("link");
 frameworkCSS.setAttribute("rel", "stylesheet");
-frameworkCSS.setAttribute("href", "http://framework.garyantier.com/styles/1.0.0/framework.css");
+frameworkCSS.setAttribute("href", "https://framework.garyantier.com/styles/1.0.0/framework.css");
 document.head.appendChild(frameworkCSS);
 
 // Info: A little easter egg.
