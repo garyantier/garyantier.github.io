@@ -153,6 +153,7 @@ var x = function (selector) {
                                     <button>&times;</button>
                                 </div>
                             </div>
+                            <!-- BODY GOES HERE -->
                         </div>
                     </div>`
                     );
@@ -161,7 +162,7 @@ var x = function (selector) {
 
                     var modal = this,
                         box = this.modal.find(".modal-box"),
-                        el = x(base.el).clone(true);
+                        el = base.clone(true);
 
                     el.addClass("modal-body");
                     box.append(el);
